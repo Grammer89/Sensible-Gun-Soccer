@@ -7,6 +7,7 @@ public class Pick : MonoBehaviour
         if (other.gameObject.CompareTag(Utilities._playerTag))
         {
             Bullet bullet = gameObject.GetComponent<Bullet>();
+            Debug.Log(bullet.GetBulletAmmo() + "preso");
             Gun gun = other.gameObject.GetComponent<Gun>();
             if (gun != null)
             {
