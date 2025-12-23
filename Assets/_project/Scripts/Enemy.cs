@@ -30,7 +30,7 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!_lifeEnemy.IsAlive())
+        if (!_lifeEnemy.IsAlive() || (_player.GetComponent<PlayerController>()._goal))
         {
             _animParam.SetPlayerKillOrVictory(true);
             GetComponent<Gun>().enabled = false;

@@ -25,7 +25,7 @@ public class AnimatorTifoseriaAway : MonoBehaviour
         }
         else if (player.GetComponent<PlayerController>()._goal)
         {
-            _animParam.SetBool(Utilities._playerKillState, true);
+            _animParam.SetBool(Utilities._playerWinState, true);
         }
     }
 }

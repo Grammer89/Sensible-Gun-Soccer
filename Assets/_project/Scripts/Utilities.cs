@@ -37,6 +37,7 @@ public class Utilities : MonoBehaviour
     public const string _bulletPlayerTag = "BulletPlayer";
     public const string _bulletEnemyTag = "BulletEnemy";
     public const string _gunTag = "GunTag";
+    public const string _soccerBallTag = "SoccerBall";
 
     //Stati Enemies
     public const string _playerFarState = "PlayerFar";

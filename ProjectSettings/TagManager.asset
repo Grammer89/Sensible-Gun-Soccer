@@ -7,6 +7,7 @@ TagManager:
   - Enemy
   - BulletPlayer
   - BulletEnemy
+  - SoccerBall
   layers:
   - Default
   - TransparentFX
