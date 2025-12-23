@@ -50,7 +50,7 @@ public class
         {
             _lifeController = other.gameObject.GetComponent<LifeController>();
 
-            if (gameObject.name.Contains(Utilities._bulletElettroshock)) ;
+            if (gameObject.name.Contains(Utilities._bulletElettroshock))  // CS0642
             {
                 other.gameObject.GetComponent<Enemy>().SetStatusShocked();
             }

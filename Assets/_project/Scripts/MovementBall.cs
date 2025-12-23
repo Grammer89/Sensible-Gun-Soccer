@@ -5,7 +5,7 @@ using UnityEngine;
 public class MovementBall : MonoBehaviour
 {
     private Rigidbody2D _rb;
-    private float _speed = 1f;
+    private float _speed = 0.2f;
     // Start is called before the first frame update
 
     // Update is called once per frame
