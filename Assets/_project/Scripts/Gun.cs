@@ -113,7 +113,7 @@ public class Gun : MonoBehaviour
             {
                 //Vettore che va puntare il player=> Vettore Position Player - Vettore Position Bullet
                 Vector2 directionPlayer = new Vector2(enemy.GetDirectionPlayer().x - gameObject.transform.position.x,
-                                                       enemy.GetDirectionPlayer().y - gameObject.transform.position.y);
+                                                      enemy.GetDirectionPlayer().y - gameObject.transform.position.y);
 
                 //Istanziamo il bullet
                 Bullet bulletPrefab = Instantiate(bullet);

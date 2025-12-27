@@ -308,6 +308,7 @@ GameObject:
   m_Component:
   - component: {fileID: 82145232}
   - component: {fileID: 82145233}
+  - component: {fileID: 82145234}
   m_Layer: 0
   m_Name: Collider Linea1 (6)
   m_TagString: Untagged
@@ -375,6 +376,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &82145234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 82145231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85c3bbd34dc7d6f429212b6e41431b51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &99645549
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1103,6 +1116,7 @@ GameObject:
   m_Component:
   - component: {fileID: 215669200}
   - component: {fileID: 215669199}
+  - component: {fileID: 215669201}
   m_Layer: 0
   m_Name: Collider Linea1
   m_TagString: Untagged
@@ -1170,6 +1184,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1964284412}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &215669201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 215669198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85c3bbd34dc7d6f429212b6e41431b51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &219479323
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1810,6 +1836,7 @@ GameObject:
   m_Component:
   - component: {fileID: 361729097}
   - component: {fileID: 361729098}
+  - component: {fileID: 361729099}
   m_Layer: 0
   m_Name: Collider Linea1 (8)
   m_TagString: Untagged
@@ -1877,6 +1904,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &361729099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 361729096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85c3bbd34dc7d6f429212b6e41431b51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &361801397
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3275,6 +3314,7 @@ GameObject:
   m_Component:
   - component: {fileID: 654952502}
   - component: {fileID: 654952501}
+  - component: {fileID: 654952503}
   m_Layer: 0
   m_Name: Collider Linea1 (4)
   m_TagString: Untagged
@@ -3342,6 +3382,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1964284412}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!114 &654952503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 654952500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85c3bbd34dc7d6f429212b6e41431b51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &668017741
 GameObject:
   m_ObjectHideFlags: 0
@@ -26402,6 +26454,7 @@ GameObject:
   m_Component:
   - component: {fileID: 843516828}
   - component: {fileID: 843516829}
+  - component: {fileID: 843516830}
   m_Layer: 0
   m_Name: Collider Linea1 (7)
   m_TagString: Untagged
@@ -26469,6 +26522,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &843516830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 843516827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85c3bbd34dc7d6f429212b6e41431b51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &847417107
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27243,6 +27308,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1054194971}
   - component: {fileID: 1054194970}
+  - component: {fileID: 1054194972}
   m_Layer: 0
   m_Name: Collider Linea1 (3)
   m_TagString: Untagged
@@ -27310,6 +27376,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1964284412}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!114 &1054194972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1054194969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85c3bbd34dc7d6f429212b6e41431b51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1057464436
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27697,6 +27775,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1105971568}
   - component: {fileID: 1105971567}
+  - component: {fileID: 1105971569}
   m_Layer: 0
   m_Name: Collider Linea1 (2)
   m_TagString: Untagged
@@ -27764,6 +27843,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1964284412}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!114 &1105971569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1105971566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85c3bbd34dc7d6f429212b6e41431b51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1129714552
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28466,6 +28557,7 @@ GameObject:
   - component: {fileID: 1243076161}
   - component: {fileID: 1243076162}
   - component: {fileID: 1243076163}
+  - component: {fileID: 1243076164}
   m_Layer: 0
   m_Name: Collider Linea1 (11)
   m_TagString: Untagged
@@ -28545,6 +28637,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f0b9d1838caa8f488b5c5e61583d698, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1243076164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1243076160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85c3bbd34dc7d6f429212b6e41431b51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1263205070
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28622,6 +28726,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1292381700}
   - component: {fileID: 1292381701}
+  - component: {fileID: 1292381702}
   m_Layer: 0
   m_Name: Collider Linea1 (12)
   m_TagString: Untagged
@@ -28689,6 +28794,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1292381702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1292381699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85c3bbd34dc7d6f429212b6e41431b51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1313972858
 GameObject:
   m_ObjectHideFlags: 0
@@ -32228,6 +32345,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1584103422}
   - component: {fileID: 1584103421}
+  - component: {fileID: 1584103423}
   m_Layer: 0
   m_Name: Collider Linea1 (1)
   m_TagString: Untagged
@@ -32295,6 +32413,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1964284412}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1584103423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1584103420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85c3bbd34dc7d6f429212b6e41431b51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1593559151 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6543906773547118027, guid: 3e5603d0e52fdb841bff9595dd3262fd, type: 3}
@@ -32812,6 +32942,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1734827066}
   - component: {fileID: 1734827065}
+  - component: {fileID: 1734827067}
   m_Layer: 0
   m_Name: Collider Linea1 (5)
   m_TagString: Untagged
@@ -32879,6 +33010,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1964284412}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!114 &1734827067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1734827064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85c3bbd34dc7d6f429212b6e41431b51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1742402741
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33194,6 +33337,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1800091945}
   - component: {fileID: 1800091946}
+  - component: {fileID: 1800091947}
   m_Layer: 0
   m_Name: Collider Linea1 (10)
   m_TagString: Untagged
@@ -33261,6 +33405,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1800091947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1800091944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85c3bbd34dc7d6f429212b6e41431b51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1818369490
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34406,6 +34562,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2100723070}
   - component: {fileID: 2100723071}
+  - component: {fileID: 2100723072}
   m_Layer: 0
   m_Name: Collider Linea1 (9)
   m_TagString: Untagged
@@ -34473,6 +34630,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &2100723072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2100723069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85c3bbd34dc7d6f429212b6e41431b51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &2110741710 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4286894906955836445, guid: 5e4b0709842629c4da12babf3155d227, type: 3}
