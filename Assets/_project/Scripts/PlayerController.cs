@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
     private float _vertical;
     private Rigidbody2D _rb;
     private Vector2 _lastdirection;
-    private AnimatorPlayerHandler _animParam;
+    private PlayerAnimation _animParam;
     private LifeController _lifeController;
     private bool _isDeath;
     public bool _kill;
@@ -21,7 +21,7 @@ public class PlayerController : MonoBehaviour
 
         //Setting come default Idle Down
         _lastdirection.y = -0.01f;
-        _animParam = GetComponent<AnimatorPlayerHandler>();
+        _animParam = GetComponent<PlayerAnimation>();
         _animParam.SetPlayerSpeed(_lastdirection);
 
         _lifeController = GetComponent<LifeController>();

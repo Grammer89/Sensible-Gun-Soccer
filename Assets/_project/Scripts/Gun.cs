@@ -33,7 +33,6 @@ public class Gun : MonoBehaviour
 
         for (int i = 0; i < listGun.Count; i++)
         {
-
             if (Time.time - listGun[i].GetDeltaTime() > listGun[i].GetFireRate())
             {
 

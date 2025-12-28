@@ -50,6 +50,7 @@ public class Utilities : MonoBehaviour
     public const string _playerXspeed = "xSpeed";
     public const string _playerYspeed = "ySpeed";
     public const string _playerIsDeath = "isDeath";
+    public const string _playerGoal = "Goal";
 
     //Stati Tifoseria Home
     public const string _playerLose = "playerLose";

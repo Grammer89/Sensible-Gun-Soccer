@@ -9,7 +9,6 @@ public class AnimatorTifoseriaAway : MonoBehaviour
     void Awake()
     {
 
-
         player = GameObject.FindGameObjectWithTag(Utilities._playerTag);
 
         _animParam = GetComponent<Animator>();
