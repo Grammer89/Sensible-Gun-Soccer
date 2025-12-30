@@ -33496,6 +33496,22 @@ PrefabInstance:
       propertyPath: _listBullet.Array.data[0]
       value: 
       objectReference: {fileID: 1826653683}
+    - target: {fileID: 5798865683377756972, guid: 0bf88abdf6f26bc4d96a03167b0bd796, type: 3}
+      propertyPath: _ammoPrefabList.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5798865683377756972, guid: 0bf88abdf6f26bc4d96a03167b0bd796, type: 3}
+      propertyPath: _ammoPrefabList.Array.data[0]
+      value: 
+      objectReference: {fileID: 294275134392815136, guid: 24525147b06036a4eb40b1f3159cc8af, type: 3}
+    - target: {fileID: 5798865683377756972, guid: 0bf88abdf6f26bc4d96a03167b0bd796, type: 3}
+      propertyPath: _ammoPrefabList.Array.data[1]
+      value: 
+      objectReference: {fileID: 1208882056389274414, guid: 728486e075b19cf43a96239cec519dd1, type: 3}
+    - target: {fileID: 5798865683377756972, guid: 0bf88abdf6f26bc4d96a03167b0bd796, type: 3}
+      propertyPath: _ammoPrefabList.Array.data[2]
+      value: 
+      objectReference: {fileID: 282190258631153571, guid: 832b39137cdc0ab49b0cf2de42954355, type: 3}
     - target: {fileID: 6422893576534021203, guid: 0bf88abdf6f26bc4d96a03167b0bd796, type: 3}
       propertyPath: m_LocalPosition.x
       value: 15
@@ -34797,6 +34813,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 309683341}
     m_Modifications:
+    - target: {fileID: 1776106063973452265, guid: 3c234d6b051ab6149b6be154ba161414, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 484cae36dc99a69469a93ca133237923, type: 2}
     - target: {fileID: 4377893037682003652, guid: 3c234d6b051ab6149b6be154ba161414, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.08

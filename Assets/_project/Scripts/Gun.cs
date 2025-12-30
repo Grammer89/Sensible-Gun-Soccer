@@ -13,7 +13,7 @@ public class Gun : MonoBehaviour
             _listGun[i].SetDeltaTime(0f);
         }
 
-  
+
     }
     void Update()
     {
@@ -39,8 +39,13 @@ public class Gun : MonoBehaviour
         }
         if (ammoNotFound)
         {
-           Debug.Log( bullet.GetMinDist());
+            Debug.Log(bullet.GetMinDist());
             _listGun.Add(bullet);
+        }
+
+        for (int i = 0; i < _listGun.Count; i++)
+        {
+            Debug.Log(_listGun[i].GetBulletAmmo());
         }
     }
 
@@ -52,9 +57,9 @@ public class Gun : MonoBehaviour
 
             if (Time.time - _listGun[i].GetDeltaTime() > _listGun[i].GetFireRate())
             {
-                for (int j = 0; j < _listGun.Count; j++)
+                for (int j = 0; j < _listBullet.Count; j++)
                 {
-                    if (_listGun[j].GetBulletAmmo() == _listGun[i].GetBulletAmmo())
+                    if (_listBullet[j].GetBulletAmmo() == _listGun[i].GetBulletAmmo())
                     {
 
                         Shoot(_listBullet[j]);
