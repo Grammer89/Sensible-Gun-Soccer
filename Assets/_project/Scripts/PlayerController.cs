@@ -3,17 +3,21 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] private float _speed;
+
     private Vector2 _direction;
     private float _horizontal;
     private float _vertical;
-    private Rigidbody2D _rb;
+
     private Vector2 _lastdirection;
+
+    private Rigidbody2D _rb;
     private PlayerAnimation _animParam;
     private LifeController _lifeController;
+    public GameObject[] _enemies;
     private bool _isDeath;
     public bool _kill;
     public bool _goal;
-
+    private float _timeToCheckEnemeyRadar;
     // Start is called before the first frame update
     void Awake()
     {
@@ -25,12 +29,14 @@ public class PlayerController : MonoBehaviour
         _animParam.SetPlayerSpeed(_lastdirection);
 
         _lifeController = GetComponent<LifeController>();
+
+        _enemies = GameObject.FindGameObjectsWithTag(Utilities._enemyTag);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (_isDeath) return;
+        if (_isDeath || _goal) return;
 
         if (!_lifeController.IsAlive())
         {
@@ -60,10 +66,18 @@ public class PlayerController : MonoBehaviour
 
         //Gestione Animazione Movimento Player
         _animParam.SetPlayerSpeed(Direction);
+
+        if (Time.time - _timeToCheckEnemeyRadar > 0.25f)
+        {
+            _enemies = GameObject.FindGameObjectsWithTag(Utilities._enemyTag);
+            _timeToCheckEnemeyRadar = Time.time;
+
+        }
     }
 
     private void FixedUpdate()
     {
+
         _rb.MovePosition(_rb.position + _direction * (_speed * Time.deltaTime));
     }
 

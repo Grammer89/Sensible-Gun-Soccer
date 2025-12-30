@@ -167,6 +167,7 @@ MonoBehaviour:
   _speed: 8
   _lifeSpan: 6
   _fireRate: 0.35
+  _minDist: 5
 --- !u!210 &2547603296687119686
 SortingGroup:
   m_ObjectHideFlags: 0

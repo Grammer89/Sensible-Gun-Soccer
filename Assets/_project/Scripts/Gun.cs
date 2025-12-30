@@ -5,19 +5,22 @@ public class Gun : MonoBehaviour
 {
     [SerializeField] private List<Bullet> _listBullet;
     [SerializeField] private List<Bullet> _listGun;
-
     private void Awake()
     {
-        for (int i = 0; i < _listBullet.Count; i++)
+
+        for (int i = 0; i < _listGun.Count; i++)
         {
-            _listBullet[i].SetDeltaTime(0f);
+           _listGun[i].SetDeltaTime(2f);
         }
+
+
+
     }
     void Update()
     {
         if (_listGun.Count != 0)
         {
-            CanIShoot(_listGun);
+            CanIShoot();
         }
 
     }
@@ -28,24 +31,24 @@ public class Gun : MonoBehaviour
         _listGun.Add(bulletGun);
     }
 
-    public void CanIShoot(List<Bullet> listGun)
+    public void CanIShoot()
     {
 
-        for (int i = 0; i < listGun.Count; i++)
+        for (int i = 0; i < _listGun.Count; i++)
         {
-            if (Time.time - listGun[i].GetDeltaTime() > listGun[i].GetFireRate())
+            if (gameObject.name.Contains("2"))
             {
-
-                for (int j = 0; j < _listBullet.Count; j++)
+                Debug.Log(gameObject.name + "DeltaTime: " + _listGun[i].GetDeltaTime());
+                Debug.Log(_listGun.Count);
+            }
+            if (Time.time - _listGun[i].GetDeltaTime() > _listGun[i].GetFireRate())
+            {
+                for (int j = 0; j < _listGun.Count; j++)
                 {
-
-                    if (_listBullet[j].GetBulletAmmo() == listGun[i].GetBulletAmmo())
+                    if (_listGun[j].GetBulletAmmo() == _listGun[i].GetBulletAmmo())
                     {
-
-                        Shoot(_listBullet[j]);
-
-                        listGun[i].SetDeltaTime(Time.time);
-
+                        Shoot(_listGun[j]);
+                        _listGun[i].SetDeltaTime(Time.time);
                     }
                 }
             }
@@ -67,9 +70,22 @@ public class Gun : MonoBehaviour
 
     public void ShootPlayer(Bullet bullet)
     {
+        bool checkShoot = false;
         PlayerController playercontroller = gameObject.GetComponent<PlayerController>();
         if (playercontroller != null)
         {
+            for (int i = 0; i < playercontroller._enemies.Length; i++)
+            {
+                if (bullet.MinDistOk(gameObject, playercontroller._enemies[i]))
+                {
+                    checkShoot = true;
+                    break;
+                }
+            }
+            if (!checkShoot)
+            {
+                return;
+            }
             Vector2 directionPlayer = playercontroller.GetDirection();
 
             //Istanziamo il bullet

@@ -106,7 +106,7 @@ MonoBehaviour:
   _speed: 5
   _lifeSpan: 1
   _fireRate: 3
-  _deltaTime: 2
+  _minDist: 7
 --- !u!70 &4718286239521993051
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

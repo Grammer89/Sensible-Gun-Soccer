@@ -8,7 +8,8 @@ public class
     [SerializeField] private float _speed;
     [SerializeField] private float _lifeSpan;
     [SerializeField] private float _fireRate;
-    private float _deltaTime;
+    [SerializeField] private float _minDist;
+    private float _deltaTime = 0f;
 
     private Rigidbody2D _rb;
     private LifeController _lifeController;
@@ -77,4 +78,16 @@ public class
         _rb.velocity = direction.normalized * _speed;
     }
 
+    public bool MinDistOk(GameObject object1, GameObject object2)
+    {
+        float distancePlayerEnemy = Vector2.Distance(object2.transform.position, object1.transform.position);
+        if (distancePlayerEnemy < _minDist)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
 }

@@ -34,9 +34,14 @@ public class Enemy : MonoBehaviour
         {
             _animParam.SetPlayerKillOrVictory(true);
             GetComponent<Gun>().enabled = false;
+           
+            AttackDefender attackDefender = GetComponent<AttackDefender>();
+            if (attackDefender != null)
+            {
+                GetComponent<AttackDefender>().enabled = false;
+            }
 
-            _player.GetComponent<PlayerController>()._kill = true;
-
+            Destroy(gameObject, 6f);
             return;
         }
 
@@ -45,6 +50,7 @@ public class Enemy : MonoBehaviour
         {
             _animParam.SetPlayerLose(true);
             GetComponent<Gun>().enabled = false;
+
             return;
         }
 
