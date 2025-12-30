@@ -10,7 +10,7 @@ public class Gun : MonoBehaviour
 
         for (int i = 0; i < _listGun.Count; i++)
         {
-           _listGun[i].SetDeltaTime(2f);
+            _listGun[i].SetDeltaTime(2f);
         }
 
 
@@ -28,7 +28,19 @@ public class Gun : MonoBehaviour
     //Functionality
     public void AddListGun(Bullet bulletGun)
     {
-        _listGun.Add(bulletGun);
+        bool ammoNotFound = false;
+        for (int i = 0; i < _listGun.Count; i++)
+        {
+            if (_listGun[i].GetBulletAmmo() != bulletGun.GetBulletAmmo())
+            {
+                ammoNotFound = true;
+            }
+
+        }
+        if (ammoNotFound)
+        {
+            _listGun.Add(bulletGun);
+        }
     }
 
     public void CanIShoot()

@@ -3542,6 +3542,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 309683341}
     m_Modifications:
+    - target: {fileID: -2550215363351165869, guid: eec5fccd1a461b14c9c43e4fe4071dac, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 95c51a42e4cdffc4eaee9ecdba091e5e, type: 2}
     - target: {fileID: 7434379088389671566, guid: eec5fccd1a461b14c9c43e4fe4071dac, type: 3}
       propertyPath: m_Name
       value: BulletMidfielder
@@ -26912,6 +26916,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 309683341}
     m_Modifications:
+    - target: {fileID: -2550215363351165869, guid: eec5fccd1a461b14c9c43e4fe4071dac, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 95c51a42e4cdffc4eaee9ecdba091e5e, type: 2}
     - target: {fileID: 7434379088389671566, guid: eec5fccd1a461b14c9c43e4fe4071dac, type: 3}
       propertyPath: m_Name
       value: BulletMidfielder (2)
@@ -27170,6 +27178,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 309683341}
     m_Modifications:
+    - target: {fileID: -2550215363351165869, guid: eec5fccd1a461b14c9c43e4fe4071dac, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 95c51a42e4cdffc4eaee9ecdba091e5e, type: 2}
     - target: {fileID: 7434379088389671566, guid: eec5fccd1a461b14c9c43e4fe4071dac, type: 3}
       propertyPath: m_Name
       value: BulletMidfielder (1)
