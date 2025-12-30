@@ -10,11 +10,10 @@ public class Gun : MonoBehaviour
 
         for (int i = 0; i < _listGun.Count; i++)
         {
-            _listGun[i].SetDeltaTime(2f);
+            _listGun[i].SetDeltaTime(0f);
         }
 
-
-
+  
     }
     void Update()
     {
@@ -28,6 +27,7 @@ public class Gun : MonoBehaviour
     //Functionality
     public void AddListGun(Bullet bulletGun)
     {
+        Bullet bullet = bulletGun;
         bool ammoNotFound = false;
         for (int i = 0; i < _listGun.Count; i++)
         {
@@ -39,7 +39,8 @@ public class Gun : MonoBehaviour
         }
         if (ammoNotFound)
         {
-            _listGun.Add(bulletGun);
+           Debug.Log( bullet.GetMinDist());
+            _listGun.Add(bullet);
         }
     }
 
@@ -48,18 +49,15 @@ public class Gun : MonoBehaviour
 
         for (int i = 0; i < _listGun.Count; i++)
         {
-            if (gameObject.name.Contains("2"))
-            {
-                Debug.Log(gameObject.name + "DeltaTime: " + _listGun[i].GetDeltaTime());
-                Debug.Log(_listGun.Count);
-            }
+
             if (Time.time - _listGun[i].GetDeltaTime() > _listGun[i].GetFireRate())
             {
                 for (int j = 0; j < _listGun.Count; j++)
                 {
                     if (_listGun[j].GetBulletAmmo() == _listGun[i].GetBulletAmmo())
                     {
-                        Shoot(_listGun[j]);
+
+                        Shoot(_listBullet[j]);
                         _listGun[i].SetDeltaTime(Time.time);
                     }
                 }
@@ -88,12 +86,14 @@ public class Gun : MonoBehaviour
         {
             for (int i = 0; i < playercontroller._enemies.Length; i++)
             {
-                if (bullet.MinDistOk(gameObject, playercontroller._enemies[i]))
+
+                if (bullet.MinDistOk(playercontroller._enemies[i], gameObject, bullet.GetMinDist()))
                 {
                     checkShoot = true;
                     break;
                 }
             }
+            Debug.Log(bullet.GetBulletAmmo() + " check Shoot : " + checkShoot + "BulletMinDist" + bullet.GetMinDist());
             if (!checkShoot)
             {
                 return;

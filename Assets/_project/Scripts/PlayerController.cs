@@ -67,7 +67,7 @@ public class PlayerController : MonoBehaviour
         //Gestione Animazione Movimento Player
         _animParam.SetPlayerSpeed(Direction);
 
-        if (Time.time - _timeToCheckEnemeyRadar > 0.25f)
+        if (Time.time - _timeToCheckEnemeyRadar > 0.15f)
         {
             _enemies = GameObject.FindGameObjectsWithTag(Utilities._enemyTag);
             _timeToCheckEnemeyRadar = Time.time;

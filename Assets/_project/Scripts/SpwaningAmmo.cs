@@ -22,7 +22,8 @@ public class SpwaningAmmo : MonoBehaviour
     {
         if (_ammoPrefabList.Count > 0)
         {
-            Bullet ammoPrefab = Instantiate(_ammoPrefabList[Random.Range(0, _ammoPrefabList.Count)]);
+            int randomIndex = Random.Range(0, _ammoPrefabList.Count);
+            Bullet ammoPrefab = Instantiate(_ammoPrefabList[randomIndex]);
             Vector2 newDirection = new Vector2(gameObject.transform.position.x + 1, gameObject.transform.position.y + 1);
             ammoPrefab.transform.position = newDirection;
             GetComponent<SpwaningAmmo>().enabled = false;

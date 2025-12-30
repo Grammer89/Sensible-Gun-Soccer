@@ -26,6 +26,7 @@ public class
     public float GetLifeSpan() => _lifeSpan;
     public float GetFireRate() => _fireRate;
     public float GetDeltaTime() => _deltaTime;
+    public float GetMinDist() => _minDist;
 
     //Setter
     public void SetDeltaTime(float deltaTime)
@@ -78,10 +79,10 @@ public class
         _rb.velocity = direction.normalized * _speed;
     }
 
-    public bool MinDistOk(GameObject object1, GameObject object2)
+    public bool MinDistOk(GameObject object1, GameObject object2, float minDistShootBullet)
     {
         float distancePlayerEnemy = Vector2.Distance(object2.transform.position, object1.transform.position);
-        if (distancePlayerEnemy < _minDist)
+        if (distancePlayerEnemy < minDistShootBullet)
         {
             return true;
         }

@@ -34,7 +34,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4812248087349445050, guid: 42965aeb67385ee41a994df212edd1a1, type: 3}
       propertyPath: _minDist
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4812248087349445050, guid: 42965aeb67385ee41a994df212edd1a1, type: 3}
       propertyPath: _fireRate
