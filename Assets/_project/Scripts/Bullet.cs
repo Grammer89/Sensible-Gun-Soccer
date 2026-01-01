@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class
@@ -17,6 +18,17 @@ public class
     public void Awake()
     {
         _rb = GetComponent<Rigidbody2D>();
+    }
+
+    //Constructor
+    public Bullet(Bullet otherBullet)
+    {
+        _bulletAmmo = otherBullet._bulletAmmo;
+        _damage = otherBullet._damage;
+        _speed = otherBullet._speed;
+        _lifeSpan = otherBullet._lifeSpan;
+        _fireRate = otherBullet._fireRate;
+        _minDist = otherBullet._minDist;
     }
 
     //Getter

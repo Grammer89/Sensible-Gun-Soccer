@@ -8,6 +8,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -1189413122777761898, guid: 32b1f89121e8cc24e92e1923fdb40629, type: 3}
+      propertyPath: m_SortingLayer
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: -1189413122777761898, guid: 32b1f89121e8cc24e92e1923fdb40629, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1758112443
+      objectReference: {fileID: 0}
     - target: {fileID: 2850428421699514957, guid: 32b1f89121e8cc24e92e1923fdb40629, type: 3}
       propertyPath: m_Name
       value: Midfielder Variant
@@ -18,7 +26,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3298257979911528884, guid: 32b1f89121e8cc24e92e1923fdb40629, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 13.64
+      value: -2.142249
       objectReference: {fileID: 0}
     - target: {fileID: 3298257979911528884, guid: 32b1f89121e8cc24e92e1923fdb40629, type: 3}
       propertyPath: m_LocalPosition.y
@@ -86,7 +94,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4901488212780884496, guid: 32b1f89121e8cc24e92e1923fdb40629, type: 3}
       propertyPath: _minDistToAtt
-      value: 5
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5502947236025057981, guid: 32b1f89121e8cc24e92e1923fdb40629, type: 3}
       propertyPath: _hp
@@ -128,9 +136,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2850428421699514957, guid: 32b1f89121e8cc24e92e1923fdb40629, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5199419856620195918}
-    - targetCorrespondingSourceObject: {fileID: 2850428421699514957, guid: 32b1f89121e8cc24e92e1923fdb40629, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 7685520669730284356}
     - targetCorrespondingSourceObject: {fileID: 2034668533924833525, guid: 32b1f89121e8cc24e92e1923fdb40629, type: 3}
       insertIndex: -1
       addedObject: {fileID: 7475975148962200278}
@@ -190,22 +195,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0.42}
   m_Size: {x: 0.5, y: 1}
   m_Direction: 0
---- !u!114 &7685520669730284356
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6543906773547118027}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 049b77dfb5066c148bc48d36e167ee68, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _ammoPrefabList:
-  - {fileID: 282190258631153571, guid: 832b39137cdc0ab49b0cf2de42954355, type: 3}
-  - {fileID: 1208882056389274414, guid: 728486e075b19cf43a96239cec519dd1, type: 3}
-  - {fileID: 294275134392815136, guid: 24525147b06036a4eb40b1f3159cc8af, type: 3}
 --- !u!1 &7017445250148792179 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2034668533924833525, guid: 32b1f89121e8cc24e92e1923fdb40629, type: 3}

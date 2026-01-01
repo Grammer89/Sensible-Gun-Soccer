@@ -8,6 +8,7 @@ TagManager:
   - BulletPlayer
   - BulletEnemy
   - SoccerBall
+  - Stadio
   layers:
   - Default
   - TransparentFX
@@ -53,6 +54,9 @@ TagManager:
     locked: 0
   - name: Porte
     uniqueID: 1176638603
+    locked: 0
+  - name: Enemy
+    uniqueID: 1758112443
     locked: 0
   - name: Player
     uniqueID: 1121555819

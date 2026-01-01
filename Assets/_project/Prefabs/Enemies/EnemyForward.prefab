@@ -15,7 +15,6 @@ GameObject:
   - component: {fileID: 8769208977645232779}
   - component: {fileID: 1669910687825951118}
   - component: {fileID: 1314176397259782256}
-  - component: {fileID: 5798865683377756972}
   m_Layer: 0
   m_Name: EnemyForward
   m_TagString: Enemy
@@ -47,7 +46,7 @@ SortingGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2650397082534828634}
   m_Enabled: 1
-  m_SortingLayerID: 1121555819
+  m_SortingLayerID: 1758112443
   m_SortingLayer: 4
   m_SortingOrder: 0
   m_SortAtRoot: 0
@@ -94,7 +93,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _enemyType: 3
   _statusElettroshock: 0
-  _minDistToAtt: 4
+  _minDistToAtt: 6
   _speed: 3
 --- !u!114 &1669910687825951118
 MonoBehaviour:
@@ -143,22 +142,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0.48}
   m_Size: {x: 0.5, y: 1}
   m_Direction: 0
---- !u!114 &5798865683377756972
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2650397082534828634}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 049b77dfb5066c148bc48d36e167ee68, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _ammoPrefabList:
-  - {fileID: 282190258631153571, guid: 832b39137cdc0ab49b0cf2de42954355, type: 3}
-  - {fileID: 1208882056389274414, guid: 728486e075b19cf43a96239cec519dd1, type: 3}
-  - {fileID: 294275134392815136, guid: 24525147b06036a4eb40b1f3159cc8af, type: 3}
 --- !u!1 &3671408740884146857
 GameObject:
   m_ObjectHideFlags: 0

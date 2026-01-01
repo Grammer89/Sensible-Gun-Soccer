@@ -1,23 +1,30 @@
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Gun : MonoBehaviour
 {
     [SerializeField] private List<Bullet> _listBullet;
     [SerializeField] private List<Bullet> _listGun;
+    private List<Bullet> _internalListBullet = new List<Bullet>();
+    private List<Bullet> _internalListGun = new List<Bullet>();
     private void Awake()
     {
 
-        for (int i = 0; i < _listGun.Count; i++)
-        {
-            _listGun[i].SetDeltaTime(0f);
-        }
 
+        foreach (var bullet in _listBullet)
+        {
+            _internalListBullet.Add(new Bullet(bullet));
+        }
+        foreach (var bullet in _listGun)
+        {
+            _internalListGun.Add(new Bullet(bullet));
+        }
 
     }
     void Update()
     {
-        if (_listGun.Count != 0)
+        if (_internalListGun.Count != 0)
         {
             CanIShoot();
         }
@@ -25,45 +32,43 @@ public class Gun : MonoBehaviour
     }
 
     //Functionality
-    public void AddListGun(Bullet bulletGun)
+    public void AddListGun(Bullet gun)
     {
-        Bullet bullet = bulletGun;
-        bool ammoNotFound = false;
-        for (int i = 0; i < _listGun.Count; i++)
-        {
-            if (_listGun[i].GetBulletAmmo() != bulletGun.GetBulletAmmo())
-            {
-                ammoNotFound = true;
-            }
 
-        }
-        if (ammoNotFound)
+        if (!CheckListGun(gun))
         {
-            Debug.Log(bullet.GetMinDist());
-            _listGun.Add(bullet);
+            _internalListGun.Add(gun);
         }
 
-        for (int i = 0; i < _listGun.Count; i++)
-        {
-            Debug.Log(_listGun[i].GetBulletAmmo());
-        }
     }
 
+    public bool CheckListGun(Bullet gun)
+    {
+        bool notFound = false;
+        for (int i = 0; i < _internalListGun.Count; i++)
+        {
+            if (_internalListGun[i].GetBulletAmmo() == gun.GetBulletAmmo())
+            {
+                notFound = true;
+            }
+        }
+        return notFound;
+    }
     public void CanIShoot()
     {
 
-        for (int i = 0; i < _listGun.Count; i++)
+        for (int i = 0; i < _internalListGun.Count; i++)
         {
-
-            if (Time.time - _listGun[i].GetDeltaTime() > _listGun[i].GetFireRate())
+            if (Time.time - _internalListGun[i].GetDeltaTime() > _internalListGun[i].GetFireRate())
             {
-                for (int j = 0; j < _listBullet.Count; j++)
+                for (int j = 0; j < _internalListBullet.Count; j++)
                 {
-                    if (_listBullet[j].GetBulletAmmo() == _listGun[i].GetBulletAmmo())
+                    if (_internalListBullet[j].GetBulletAmmo() == _internalListGun[i].GetBulletAmmo())
                     {
 
                         Shoot(_listBullet[j]);
-                        _listGun[i].SetDeltaTime(Time.time);
+                        Debug.Log(gameObject.name + "sta modificando il deltatime");
+                        _internalListGun[i].SetDeltaTime(Time.time);
                     }
                 }
             }
@@ -98,7 +103,7 @@ public class Gun : MonoBehaviour
                     break;
                 }
             }
-            Debug.Log(bullet.GetBulletAmmo() + " check Shoot : " + checkShoot + "BulletMinDist" + bullet.GetMinDist());
+
             if (!checkShoot)
             {
                 return;

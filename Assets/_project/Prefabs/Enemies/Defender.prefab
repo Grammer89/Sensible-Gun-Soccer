@@ -269,8 +269,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _enemyType: 1
   _statusElettroshock: 0
-  _minDistToAtt: 5
-  _speed: 4
+  _minDistToAtt: 6
+  _speed: 4.5
 --- !u!114 &7903664928706868433
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -306,7 +306,7 @@ SortingGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2711239416982952366}
   m_Enabled: 1
-  m_SortingLayerID: 1121555819
+  m_SortingLayerID: 1758112443
   m_SortingLayer: 4
   m_SortingOrder: 0
   m_SortAtRoot: 0
