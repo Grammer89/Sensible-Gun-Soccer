@@ -128,8 +128,8 @@ public class Gun : MonoBehaviour
 
 
             //Gestione Posizione Bullet 
-            Vector2 startPosition = new Vector2(playercontroller.transform.position.x + Vector2.one.x,
-                                                playercontroller.transform.position.y + Vector2.one.y);
+            Vector2 startPosition = new Vector2(playercontroller.transform.position.x + playercontroller.transform.forward.x,
+                                                playercontroller.transform.position.y + playercontroller.transform.forward.y);
 
             bulletPrefab.transform.position = startPosition;
 

@@ -93,6 +93,10 @@ public class
 
     public bool MinDistOk(GameObject object1, GameObject object2, float minDistShootBullet)
     {
+        if (object1 == null)
+        {
+            return false;
+        }
         float distancePlayerEnemy = Vector2.Distance(object2.transform.position, object1.transform.position);
         if (distancePlayerEnemy < minDistShootBullet)
         {
